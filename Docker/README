@@ -1,0 +1,19 @@
+Basic Docker setup:
+
+The dockerfile is a file that contains the instructions to build a docker image.
+The docker image is a snapshot of the environment that the application needs to run.
+
+The docker-compose file is a file that can be used to build and start the docker container
+
+server.py is a simple echo server that runs within a container
+
+client.py is a simple client to interact with the container
+
+HOW TO USE:
+First run "docker-compose up --build" this will build the docker container
+
+Next run "python client.py" this will start the client which you can use to interact with the docker container
+
+OTHER DOCKER STUFF:
+A requirements.txt is typically used to install any libraries before anything else is run
+You can run bash scripts from the dockerfile or docker-compose file before the container is fully operational
