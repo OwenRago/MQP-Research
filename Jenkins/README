@@ -1,0 +1,8 @@
+Basic Jenkins Setup
+
+1. Run "bash setup.sh" this will create the docker containers that are necessary to host Jenkins
+2. From there go to http://localhost:8080 which will bring you to the Jenkins starting page
+3. You can then create a pipeline of your choosing, I used this (https://www.jenkins.io/doc/pipeline/tour/hello-world/) tutorial
+
+Jenkins is used for CI/CD (Continous Integration/Continous Deployment) delivery pipelines or in other words it allows developers to more easily deploy and manage code.
+You create pipelines or jobs in Jenkins which can be run on schedule, demand or triggered automatically in order to do common tasks.
