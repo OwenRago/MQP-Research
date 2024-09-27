@@ -1,3 +1,21 @@
-This repository includes projects we create to help learn & research the technologies required for our MQP
+## Sysfs
 
-Each subdirectory contains code relevant technology and a readme on how to use said code and what it does
+### Requirements
+
+Docker installed
+
+### Run 
+
+Navigate to directory with DockerFile and script 
+
+Build Docker file with docker build -t cpu-info-gatherer-python .
+
+Run with docker run --rm -v $(pwd)/output:/output --privileged cpu-info-gatherer-python
+
+### Basic Explaination
+
+Run DockerFile through terminal
+
+Docker will open ubuntu envioment and run script
+
+The script will complete and produce an output.txt file in a output directory 
