@@ -1,0 +1,31 @@
+---
+- name: Setup Simple Website
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Start Nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Create simple index.html
+      copy:
+        content: |
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <title>Hello from Owen</title>
+          </head>
+          <body>
+              <h1>Hello, World!</h1>
+          </body>
+          </html>
+        dest: /var/www/html/index.html

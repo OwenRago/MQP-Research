@@ -1,0 +1,14 @@
+Basic Ansible setup
+
+The hosts file contains the addresses of the servers that are to be managed
+
+1. To run this first you must install Ansible on your machine https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+
+2. Afterwards run this command "ansible-playbook -i hosts setup.yml"
+
+3. From here you can go to http://localhost which you should see a hello world webpage
+
+4. If you want to run this on a different machine instead, change the hosts file and set the address to what you need with this format: "{your_server_ip} ansible_user={your_username} ansible_password={your_password}"
+
+The setup or playbook file is a set of instructions that are to be executed on a different host
+They are made up of multiple tasks which run in sequence
